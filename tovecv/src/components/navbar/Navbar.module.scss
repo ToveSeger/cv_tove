@@ -1,0 +1,24 @@
+﻿@import "../Base.scss";
+
+.navbarContainer{
+    display: flex;
+    gap:2rem;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    width:100vw;
+    position:fixed;
+    top:0;
+    padding:1rem 0;
+    font-size: 6rem;
+
+    .heading{
+        width:fit-content;
+        // margin:0 auto;
+        font-family: $heading-font-rubik-iso;
+    }
+
+    .computerIcon{
+        padding-top:1.8rem;
+    }
+}

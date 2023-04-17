@@ -1,0 +1,18 @@
+@import "./components/Base.scss";
+
+.App{
+
+  font-family: $font-base-roboto;
+  .App-header {
+    background-color: $bg-color-bubblegum;
+    min-height: 100vh;
+    color: #6B686B;
+
+    .carousel{
+      max-width: 80vw;
+      margin:0 auto;
+    }
+
+  }
+
+}

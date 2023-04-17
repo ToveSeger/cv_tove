@@ -1,0 +1,9 @@
+﻿@import "../Base.scss";
+
+.footerContainer{
+    height:10rem;
+    width:100vw;
+    position: fixed;
+    bottom:0;
+    background-color: $bg-color-antracite;
+}

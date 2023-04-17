@@ -1,0 +1,33 @@
+﻿@import "../Base.scss";
+
+.cardContainer{
+    display:flex;
+    gap:2rem;
+    flex-direction: column;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    margin:0 auto;
+    width:80%;
+    height:95%;
+
+    .pic{
+        border-radius: $border-radius-standard;
+        max-width: 100%;
+        max-height:50%;
+        margin:0 auto;
+    }
+
+    p{
+        margin:0;
+    }
+
+    .button{
+        padding:0.5rem;
+        position:fixed;
+        bottom:1rem;
+        right: 0;
+        font-size: 3rem;
+        color:$font-color-light-gray
+    }
+}
