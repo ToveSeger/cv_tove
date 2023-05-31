@@ -26,10 +26,10 @@ export const Carousel = () => {
                             <CarouselCard ImgPath={tove} ImgAltText="Picture of Tove" Text={texts.ProfileText}/>
                         </Slide>
                         <Slide className={styles.slide} index={1}>
-                        <CarouselCard ImgPath={lama} ImgAltText="Picture of a curious lama" Text={texts.ExtendedProfileText} ButtonUrl="/"/>
+                        <CarouselCard ImgPath={lama} ImgAltText="Picture of a curious lama" Text={texts.ExtendedProfileText} ButtonUrl="/about"/>
                         </Slide>
                         <Slide className={styles.slide} index={2}>
-                        <CarouselCard ImgPath={toolbox} ImgAltText="Picture of tool boxes" Text={texts.ProjectText} ButtonUrl="/"/>
+                        <CarouselCard ImgPath={toolbox} ImgAltText="Picture of tool boxes" Text={texts.ProjectText} ButtonUrl="/portfolio"/>
                         </Slide>
                         <Slide className={styles.slide} index={3}>
                         <CarouselCard ImgPath={contact} ImgAltText="Picture of a typewriting printing the words contact" Text={texts.ContactText} ButtonUrl="/"/>

@@ -1,9 +1,8 @@
-@import "./components/Base.scss";
+@import "../../components/Base.scss";
 
-.App{
+.home{
 
   font-family: $font-base-roboto;
-  .App-header {
     background-color: $bg-color-bubblegum;
     min-height: 100vh;
     color: #6B686B;
@@ -13,6 +12,6 @@
       margin:0 auto;
     }
 
-  }
+  
 
 }

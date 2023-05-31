@@ -1,0 +1,39 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@300&family=Rubik+Iso&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Tilt+Prism&display=swap&family=Source+Sans+Pro&display=swap&family=Sigmar&family=Tilt+Prism&display=swap');
+
+
+
+
+//colors
+$font-color-light-gray:#6B686B;
+$font-color-light-gray-see-through:#6b686b63;
+$color-lightGray:rgb(236, 233, 233);
+$bg-color-bubblegum:#F6E1F6;
+$bg-color-antracite: #595759;
+$bg-color-mint-green:#daffe7;
+
+//Fonts
+$heading-font-rubik-iso:'Rubik Iso';
+$font-base-roboto:'Roboto', sans-serif;
+$basefont:'Inter', sans-serif;
+$contrastFont:'Tilt Prism', cursive;
+$buttonFont: "Inter", sans-serif;
+
+$navFont:'Source Sans Pro', sans-serif;
+
+//Font weights
+$font-wight-medium-bold:600;
+
+//Border related
+$border-radius-standard:5%;
+
+//Sizes
+$txt-xxl:clamp(24px, calc(4vw + 16px), calc(7vw + 16px));
+$txt-xl: clamp(20px, calc(2.5vw + 14px), calc(4vw + 14px));
+$txt-l: clamp(1.5rem, calc(2.5vw - 4px), 6rem);
+$txt-m: clamp(1rem, calc(2vw - 4px), 4rem);
+$txt-article:clamp(12px, 16px, 20px);
+$txt-s:clamp(10px, 14px, 16px);
+$txt-logoText:clamp(14px, 1.2vw, 24px);
+$txt-label:clamp(16px, 20px, 28px);
