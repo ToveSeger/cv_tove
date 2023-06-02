@@ -1,0 +1,44 @@
+import styles from "./MiniComponents.module.scss";
+
+export function BgContentSlide1(){
+
+    return(
+        <div className={styles.bgContentSlide1}>
+        <p className={styles.listHeading}>Fem helt onödiga fakta</p>
+        <ol>
+            <li>
+                Jag får alldeles för mycket handsvett av att fickparkera för att det ens ska vara ett alternativ för mig
+            </li>
+            <li>
+                Personer som tycker om hundar är per automatik liiite bättre människor enligt mig
+            </li>
+            <li>
+                En gång hackade jag habanero utan handskar, helt ovetandes om hur stark den var. Maten gick inte att äta och jag fick spendera resten av kvällen med händerna i skålar med kallt vatten
+            </li>
+            <li>
+                Jag kan sjunga med stängd mun
+            </li>
+            <li>
+                Jag har dragit 100kg i marklyft
+            </li>
+        </ol>
+    </div>
+    )
+}
+
+export function BgContentSlide2(){
+    return(
+        <div className={styles.bgContentSlide2}>
+            <ul>
+                <li>
+                    <span>Mobil:</span>
+                    <p>070 84 58 395</p>
+                </li>
+                <li>
+                    <span>e-mail:</span>
+                    <p>tove.seger@outlook.com</p>
+                </li>
+            </ul>
+        </div>
+    )
+}

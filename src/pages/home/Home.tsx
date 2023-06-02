@@ -1,4 +1,4 @@
-import { FlipCard } from "../../components/FlipCard/FlipCard";
+import { FlipCard } from "../../components/flipCard/FlipCard";
 import { Carousel } from "../../components/carousel/Carousel";
 import styles from "./Home.module.scss";
 

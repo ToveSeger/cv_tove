@@ -6,11 +6,15 @@ import toolbox from "../Assets/img/toolbox.jpg";
 import lama from "../Assets/img/curious_lama.jpg";
 import texts from "../Assets/data/Texts.json"
 import CarouselCard from '../carouselCard/CarouselCard';
+import { FlipCard } from '../flipCard/FlipCard';
+import {BgContentSlide1, BgContentSlide2} from '../miniComponents/MiniComponents';
+
 
 
 export const Carousel = () => {
     const back= "<";
     const next= ">"
+
 
     return (
         <div className={styles.carouselContainer}>
@@ -22,17 +26,17 @@ export const Carousel = () => {
             <div className={styles.sliderWrapper}>
                 <p className={styles.hiddenText}>Nothing here to see</p>
                     <Slider className={styles.slider}>
-                        <Slide className={styles.slide} index={0}>
-                            <CarouselCard ImgPath={tove} ImgAltText="Picture of Tove" Text={texts.ProfileText}/>
+                         <Slide className={styles.slide} index={0}>
+                            <FlipCard ImgPath={tove} ImgAltText="Picture of Tove" Text={texts.ProfileText} HasBackside={false}/>
                         </Slide>
                         <Slide className={styles.slide} index={1}>
-                        <CarouselCard ImgPath={lama} ImgAltText="Picture of a curious lama" Text={texts.ExtendedProfileText} ButtonUrl="/about"/>
+                            <FlipCard ImgPath={lama} ImgAltText="Picture of a curious lama" Text={texts.ExtendedProfileText} HasBackside={true} BacksideContent={<BgContentSlide1/>}/>
                         </Slide>
                         <Slide className={styles.slide} index={2}>
-                        <CarouselCard ImgPath={toolbox} ImgAltText="Picture of tool boxes" Text={texts.ProjectText} ButtonUrl="/portfolio"/>
+                            <FlipCard ImgPath={toolbox} ImgAltText="Picture of tool boxes" Text={texts.ProjectText} HasBackside={false} RoutePath={"/portfolio"}/>
                         </Slide>
                         <Slide className={styles.slide} index={3}>
-                        <CarouselCard ImgPath={contact} ImgAltText="Picture of a typewriting printing the words contact" Text={texts.ContactText} ButtonUrl="/"/>
+                            <FlipCard ImgPath={contact} ImgAltText="Picture of a typewriting printing the words contact" Text={texts.ContactText} HasBackside={true} BacksideContent={<BgContentSlide2/>}/>
                         </Slide>
                     </Slider>
                     <div className={styles.carouselButtons}>

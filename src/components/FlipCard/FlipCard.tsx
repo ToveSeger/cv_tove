@@ -1,18 +1,44 @@
+import { useState } from 'react';
 import styles from './FlipCard.module.scss';
+import IFlipCard from '../../interfaces/IFlipCard';
+import { TbHandClick } from 'react-icons/tb';
 
-export const FlipCard = () => {
+
+export const FlipCard = (props:IFlipCard) => {
+
+  const [turn,setTurn]=useState(false);
+
+  const toggleTurn=()=>{
+    turn?setTurn(false):setTurn(true);
+  }
+
   return (
-    <div className={styles.flipCard}>
-        <div className={styles.flipCardContent}>
-            <div className={styles.flipCardFront}>
-                <p>Hej</p>
-            </div>
-            <div className={styles.flipCardBack}>
-                <h1>John Doe</h1>
-                <p>Architect & Engineer</p>
-                <p>We love that guy</p>
-            </div>
-        </div>
-    </div>
+      <div className={turn ? styles.flipCard + " " + styles.turn : styles.flipCard}>
+          <div className={styles.flipCardContent}>
+              <div className={styles.flipCardFront}>
+              {props.ImgPath&&
+                <img className={styles.pic} src={props.ImgPath} alt={props.ImgAltText}/>
+                    }
+               <p>{props.Text}</p>
+               {props.HasBackside&&
+                 <a className={styles.button} onClick={()=>toggleTurn()}>
+                      <TbHandClick/>
+                    </a>
+                }
+                 {props.RoutePath&&
+                 <a className={styles.button} href={props.RoutePath}>
+                      <TbHandClick/>
+                    </a>
+                }
+                </div>
+              <div className={styles.flipCardBack}>
+                  {props.BacksideContent}
+                  <a className={styles.button} onClick={()=>toggleTurn()}>
+                    <TbHandClick/>
+                  </a>
+              </div>
+          </div>
+      </div>
   )
 }
+

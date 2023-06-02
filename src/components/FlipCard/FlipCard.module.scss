@@ -1,16 +1,18 @@
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flipCard{
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+@import "../Base.scss";
 
-    &:hover .flipCardContent{
+.flipCard{
+    position: absolute;
+    width:85%;
+    height:85%;
+    perspective: 1000px; 
+    background-color: $bg-color-mint-green;
+    padding:1rem;
+    border-radius: $border-radius-standard;
+
+    &.turn .flipCardContent{
         transform: rotateY(180deg);
     }
     
-    /* This container is needed to position the front and back side */
 .flipCardContent{
     position: relative;
     width: 100%;
@@ -18,11 +20,22 @@
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    /* Do an horizontal flip when you move the mouse over the flip box container */
+    
+    .pic{
+        border-radius: $border-radius-standard;
+        max-width: 100%;
+        max-height:50%;
+        margin:0 auto;
+    }
 
+    p{
+        margin:0;
+        text-align: left;
+    }
 }
-/* Position the front and back side */
 .flipCardFront, .flipCardBack{
+    flex-direction: column;
+    gap:2rem;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -30,18 +43,23 @@
     backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
-.flipCardFront {
-    background-color: #bbb;
-    color: black;
-}
+// .flipCardFront {
+//     background-color: #bbb;
+//     color: black;
+// }
 
-/* Style the back side */
 .flipCardBack {
-    background-color: dodgerblue;
-    color: white;
     transform: rotateY(180deg);
 }
 
+
+.button{
+    padding:0.5rem;
+    position:fixed;
+    bottom:1rem;
+    right: 0;
+    font-size: 3rem;
+    color:$font-color-light-gray
+}
 
 }
