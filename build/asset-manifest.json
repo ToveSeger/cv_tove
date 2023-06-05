@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c12b2026.css",
-    "main.js": "/static/js/main.eff22df1.js",
+    "main.js": "/static/js/main.dcd4c81d.js",
     "static/js/787.744bfc3c.chunk.js": "/static/js/787.744bfc3c.chunk.js",
     "static/media/girlWithRedHat.jpg": "/static/media/girlWithRedHat.838e51f23e371d7e1e52.jpg",
     "static/media/toolbox.jpg": "/static/media/toolbox.90d19ac1be9350233f26.jpg",
@@ -11,11 +11,11 @@
     "static/media/tove_linkedin.jpg": "/static/media/tove_linkedin.806319e8ded9e9908283.jpg",
     "index.html": "/index.html",
     "main.c12b2026.css.map": "/static/css/main.c12b2026.css.map",
-    "main.eff22df1.js.map": "/static/js/main.eff22df1.js.map",
+    "main.dcd4c81d.js.map": "/static/js/main.dcd4c81d.js.map",
     "787.744bfc3c.chunk.js.map": "/static/js/787.744bfc3c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c12b2026.css",
-    "static/js/main.eff22df1.js"
+    "static/js/main.dcd4c81d.js"
   ]
 }

@@ -13,10 +13,10 @@ export const Home = () => {
         <div className={styles.flipCardContainer}>
           <section className={styles.firstCardSection}>
             <FlipCard ImgPath={tove} ImgAltText="Profile picture of Tove" Text={texts.ProfileText} HasBackside={false}/>
-            <FlipCard ImgPath={girl} ImgAltText="Arrangement with sunglasses and other items to form a face on a pink background" Text={texts.ExtendedProfileText} HasBackside={true} BacksideContent={<BgContentSlide1/>}/>
+            <FlipCard ImgPath={toolbox} ImgAltText="A green and red tool box" Text={texts.ProjectText} HasBackside={false} RoutePath={"/portfolio"}/>
           </section>
           <section className={styles.secondCardSection}>
-            <FlipCard ImgPath={toolbox} ImgAltText="A green and red tool box" Text={texts.ProjectText} HasBackside={false} RoutePath={"/portfolio"}/>
+            <FlipCard ImgPath={girl} ImgAltText="Arrangement with sunglasses and other items to form a face on a pink background" Text={texts.ExtendedProfileText} HasBackside={true} BacksideContent={<BgContentSlide1/>}/>
             <FlipCard ImgPath={contact} ImgAltText="Arrangement with sunglasses and other items to form a face on a gray background. Hand is pointing up." Text={texts.ContactText} HasBackside={true} BacksideContent={<BgContentSlide2/>}/>
           </section>
         </div>
