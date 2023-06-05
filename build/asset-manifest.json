@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c12b2026.css",
+    "main.js": "/static/js/main.eff22df1.js",
+    "static/js/787.744bfc3c.chunk.js": "/static/js/787.744bfc3c.chunk.js",
+    "static/media/girlWithRedHat.jpg": "/static/media/girlWithRedHat.838e51f23e371d7e1e52.jpg",
+    "static/media/toolbox.jpg": "/static/media/toolbox.90d19ac1be9350233f26.jpg",
+    "static/media/contact.jpg": "/static/media/contact.be35fab2de9443e6a44d.jpg",
+    "static/media/animalGallery.jpg": "/static/media/animalGallery.220125530adb142fe4ed.jpg",
+    "static/media/shoppingListan.jpg": "/static/media/shoppingListan.173050523b8cc099ae8f.jpg",
+    "static/media/tove_linkedin.jpg": "/static/media/tove_linkedin.806319e8ded9e9908283.jpg",
+    "index.html": "/index.html",
+    "main.c12b2026.css.map": "/static/css/main.c12b2026.css.map",
+    "main.eff22df1.js.map": "/static/js/main.eff22df1.js.map",
+    "787.744bfc3c.chunk.js.map": "/static/js/787.744bfc3c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c12b2026.css",
+    "static/js/main.eff22df1.js"
+  ]
+}
