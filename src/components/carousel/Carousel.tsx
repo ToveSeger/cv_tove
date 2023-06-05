@@ -19,12 +19,15 @@ export const Carousel = () => {
     return (
         <div className={styles.carouselContainer}>
             <CarouselProvider
-            naturalSlideWidth={600}
-            naturalSlideHeight={800}
+            naturalSlideWidth={300}//600
+            naturalSlideHeight={400}//800
             totalSlides={4}
+            orientation='horizontal'
+            playDirection='forward'
             >
             <div className={styles.sliderWrapper}>
                 <p className={styles.hiddenText}>Nothing here to see</p>
+                <div className={styles.flexContainer}>
                     <Slider className={styles.slider}>
                          <Slide className={styles.slide} index={0}>
                             <FlipCard ImgPath={tove} ImgAltText="Picture of Tove" Text={texts.ProfileText} HasBackside={false}/>
@@ -39,6 +42,7 @@ export const Carousel = () => {
                             <FlipCard ImgPath={contact} ImgAltText="Picture of a typewriting printing the words contact" Text={texts.ContactText} HasBackside={true} BacksideContent={<BgContentSlide2/>}/>
                         </Slide>
                     </Slider>
+                </div>
                     <div className={styles.carouselButtons}>
                         <ButtonBack className={styles.navButton}>{back}</ButtonBack>
                         <ButtonNext className={styles.navButton}>{next}</ButtonNext>
