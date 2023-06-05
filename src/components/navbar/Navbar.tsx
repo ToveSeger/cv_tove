@@ -4,13 +4,13 @@ import {MdComputer} from "react-icons/md";
 
 export const Navbar = () => {
   return (
-    <a href={"/"}>
-      <div className={styles.navbarContainer}>
+    <div className={styles.navbarContainer}>
+        <a href={"/"}>
           <p className={styles.heading}>Tove Seger</p>
-          <div className={styles.computerIcon}>
-            <MdComputer/>
-          </div>
+        </a>
+        <div className={styles.computerIcon}>
+          <MdComputer/>
+        </div>
       </div>
-    </a>
   )
 }

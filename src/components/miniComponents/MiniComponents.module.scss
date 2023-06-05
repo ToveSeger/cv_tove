@@ -1,3 +1,5 @@
+@import "../Base.scss";
+
 .bgContentSlide1{
     .listHeading{
         font-weight: 600;
@@ -11,5 +13,20 @@
 }
 
 .bgContentSlide2{
-    border:solid;
+    // border:solid;
+    max-width:90%;
+
+    .itemContainer{
+        display: flex;
+        gap:1rem;
+        .label{
+            font-weight: 600;
+        }
+
+        .linkedinIcon{
+            font-size: $txt-xxl;
+            margin:2rem auto;
+            color:black;
+        }
+    }
 }

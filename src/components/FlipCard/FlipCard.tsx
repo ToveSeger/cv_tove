@@ -13,13 +13,15 @@ export const FlipCard = (props:IFlipCard) => {
   }
 
   return (
-      <div className={turn ? styles.flipCard + " " + styles.turn : styles.flipCard}>
+      <div className={turn ? styles.flipCard + " " + props.className + " " + styles.turn : styles.flipCard + " " + props.className}>
           <div className={styles.flipCardContent}>
               <div className={styles.flipCardFront}>
               {props.ImgPath&&
-                <img className={styles.pic} src={props.ImgPath} alt={props.ImgAltText}/>
+                <div className={styles.picContainer}>
+                  <img className={styles.pic} src={props.ImgPath} alt={props.ImgAltText}/>
+                </div>
                     }
-               <p>{props.Text}</p>
+               <p className={styles.cardText}>{props.Text}</p>
                {props.HasBackside&&
                  <a className={styles.button} onClick={()=>toggleTurn()}>
                       <TbHandClick/>
