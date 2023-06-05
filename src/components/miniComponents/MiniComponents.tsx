@@ -1,4 +1,5 @@
 import styles from "./MiniComponents.module.scss";
+import { SiLinkedin } from 'react-icons/si';
 
 export function BgContentSlide1(){
 
@@ -29,16 +30,17 @@ export function BgContentSlide1(){
 export function BgContentSlide2(){
     return(
         <div className={styles.bgContentSlide2}>
-            <ul>
-                <li>
-                    <span>Mobil:</span>
-                    <p>070 84 58 395</p>
-                </li>
-                <li>
-                    <span>e-mail:</span>
-                    <p>tove.seger@outlook.com</p>
-                </li>
-            </ul>
+           <span className={styles.itemContainer}>
+                <p className={styles.label}>Mobil:</p>
+                <p>070 84 58 395</p>
+            </span>             
+            <span className={styles.itemContainer}>
+                <p className={styles.label}>e-mail:</p>
+                <p>tove.seger@outlook.com</p>
+            </span>
+            <a className={styles.itemContainer} href={"https://www.linkedin.com/in/tove-seger-2940318b/"}>
+                <SiLinkedin className={styles.linkedinIcon}/>
+            </a>
         </div>
     )
 }

@@ -7,4 +7,5 @@ export default interface IFlipCard{
     HasBackside:boolean;
     RoutePath?:string;
     BacksideContent?:any;
+    className?:string;
 }

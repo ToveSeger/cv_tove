@@ -10,12 +10,16 @@
     position:fixed;
     top:0;
     padding:1rem 0;
-    font-size: 6rem;
+    font-size: $txt-heading-big;
 
-    .heading{
-        width:fit-content;
-        // margin:0 auto;
-        font-family: $heading-font-rubik-iso;
+    a{
+        text-decoration: none;
+        color:black;
+        .heading{
+            width:fit-content;
+            font-family: $heading-font-rubik-iso;
+        }
+
     }
 
     .computerIcon{

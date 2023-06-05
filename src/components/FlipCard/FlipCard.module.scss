@@ -1,52 +1,44 @@
 @import "../Base.scss";
 
 .flipCard{
-    position: absolute;
-    width:85%;
-    height:85%;
+    width:calc(15rem + 10vw);
+    height:30rem;
     perspective: 1000px; 
     background-color: $bg-color-mint-green;
     padding:1rem;
     border-radius: $border-radius-standard;
+    font-size: $txt-xs;
 
     &.turn .flipCardContent{
         transform: rotateY(180deg);
     }
     
 .flipCardContent{
-    position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
     
-    .pic{
-        border-radius: $border-radius-standard;
-        max-width: 100%;
-        max-height:50%;
+    .picContainer{
+        width:90%;
         margin:0 auto;
-    }
+        .pic{
+            border-radius: $border-radius-standard;
+            max-width: 100%;
+            max-height:100%;
+            margin:1rem auto;
+        }
 
-    p{
-        margin:0;
-        text-align: left;
     }
 }
 .flipCardFront, .flipCardBack{
-    flex-direction: column;
-    gap:2rem;
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden; //Safari
     backface-visibility: hidden;
 }
-
-// .flipCardFront {
-//     background-color: #bbb;
-//     color: black;
-// }
 
 .flipCardBack {
     transform: rotateY(180deg);
