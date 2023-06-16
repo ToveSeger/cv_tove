@@ -24,7 +24,9 @@ export const FlipCard = (props:IFlipCard) => {
                     }
                     <article className={styles.textContainer}>
                       <p className={styles.cardText}>{props.Text}</p>
-                      <p>Klicka <a href={props.Link}>här</a> för att komma till GitHub-repot. Eller klicka på pilen nedan om du vill se deployad version.</p> 
+                      {props.Link&&
+                          <p>Klicka <a href={props.Link}>här</a> för att komma till GitHub-repot. Eller klicka på pilen nedan om du vill se deployad version.</p> 
+                      }
                     </article>
                {props.HasBackside&&
                  <a className={styles.button} onClick={()=>toggleTurn()}>

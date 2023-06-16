@@ -16,8 +16,8 @@ export const Home = () => {
             <FlipCard ImgPath={toolbox} ImgAltText="A green and red tool box" Text={texts.ProjectText} RoutePath={"/portfolio"}/>
           </section>
           <section className={styles.secondCardSection}>
-            <FlipCard ImgPath={girl} ImgAltText="Arrangement with sunglasses and other items to form a face on a pink background" Text={texts.ExtendedProfileText} BacksideContent={<BgContentSlide1/>}/>
-            <FlipCard ImgPath={contact} ImgAltText="Arrangement with sunglasses and other items to form a face on a gray background. Hand is pointing up." Text={texts.ContactText} BacksideContent={<BgContentSlide2/>}/>
+            <FlipCard ImgPath={girl} ImgAltText="Arrangement with sunglasses and other items to form a face on a pink background" Text={texts.ExtendedProfileText} HasBackside={true} BacksideContent={<BgContentSlide1/>}/>
+            <FlipCard ImgPath={contact} ImgAltText="Arrangement with sunglasses and other items to form a face on a gray background. Hand is pointing up." Text={texts.ContactText} HasBackside={true} BacksideContent={<BgContentSlide2/>}/>
           </section>
         </div>
     </div>
