@@ -3,7 +3,17 @@
     "ContactText": "Vill du veta mer om vad för prick jag är? Släng iväg ett meddelande så tar vi en digital kopp kaffe!",
     "ProjectText": "Kika lite på vad jag hittills lyckats åstadkomma mellan jobb, fixa mellis, skjutsa till träningar, rasta hundar, baka i alldeles för mycket barnkaos osv. (Det jag försöker säga är att allt kanske inte är polerat in i sista detalj. Please be kind.)",
     "ExtendedProfileText": "Vill du veta fem helt onödiga fakta om mig? Klicka här!",
-    "AnimalGallery":"Ett galleri med vackra bilder på djur. Fokus här ligger på att visa bilderna på ett smakfullt sätt.",
-    "ShoppingListan":"En enkel app för att lägga till och ta bort matvaror i en lista, samt filtrera efter kategori. Fokus här ligger på funktion."
+    "AnimalGallery":{
+        "Description": "Ett galleri med vackra bilder på djur. Byggt i React.",
+        "GitHubLink":"https://github.com/ToveSeger/AnimalGallery"
+    },
+    "ShoppingListan":{
+        "Description":"En enkel app för att lägga till och ta bort matvaror i en lista, samt filtrera efter kategori. Byggt i React.",
+        "GitHubLink":"https://github.com/ToveSeger/GroceryShopping"
+    },
+    "ReactWebShop":{
+        "Description":"En webshop under uppbyggnad. Byggt i React.",
+        "GitHubLink":"https://github.com/ToveSeger/ReactWebShop"
+    }
 
 }

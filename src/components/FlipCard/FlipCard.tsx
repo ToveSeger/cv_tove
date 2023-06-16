@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styles from './FlipCard.module.scss';
 import IFlipCard from '../../interfaces/IFlipCard';
 import { TbHandClick } from 'react-icons/tb';
+import { link } from 'fs';
 
 
 export const FlipCard = (props:IFlipCard) => {
@@ -21,7 +22,10 @@ export const FlipCard = (props:IFlipCard) => {
                   <img className={styles.pic} src={props.ImgPath} alt={props.ImgAltText}/>
                 </div>
                     }
-               <p className={styles.cardText}>{props.Text}</p>
+                    <article className={styles.textContainer}>
+                      <p className={styles.cardText}>{props.Text}</p>
+                      <p>Klicka <a href={props.Link}>här</a> för att komma till GitHub-repot. Eller klicka på pilen nedan om du vill se deployad version.</p> 
+                    </article>
                {props.HasBackside&&
                  <a className={styles.button} onClick={()=>toggleTurn()}>
                       <TbHandClick/>
