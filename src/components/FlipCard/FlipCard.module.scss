@@ -2,7 +2,7 @@
 
 .flipCard{
     width:calc(15rem + 10vw);
-    height:30rem;
+    height:calc(35rem - 1vw);
     perspective: 1000px; 
     background-color: $bg-color-mint-green;
     padding:1rem;
